@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Launch countdown timer</title>
+    <link rel="stylesheet" href="./styles/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap"
+      rel="stylesheet"
+    />
+  
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <strong>We're launching soon</strong>
+      </div>
+
+      <div class="countdown" id="countdown">
+        <!-- Card Days -->
+        <div class="card-container">
+          <div class="day">
+            <div id="cardDay" class="card">
+              <h1 id="countDay">0</h1>
+              <div class="halfcircle"></div>
+              <div class="halfcircle right"></div>
+            </div>
+            <div class="half-bottom-card"></div>
+          </div>
+          <div class="label">
+            <p>days</p>
+          </div>
+        </div>
+        <!-- Card Hours -->
+        <div class="card-container">
+          <div class="hour">
+            <div id="cardHour" class="card">
+              <h1 id="countHour">0</h1>
+              <div class="halfcircle"></div>
+              <div class="halfcircle right"></div>
+            </div>
+            <div class="half-bottom-card"></div>
+          </div>
+          <div class="label">
+            <p>hours</p>
+          </div>
+        </div>
+        <!-- Card Minutes -->
+        <div class="card-container">
+          <div class="minute">
+            <div id="cardMin" class="card">
+              <h1 id="countMin">0</h1>
+              <div class="halfcircle"></div>
+              <div class="halfcircle right"></div>
+            </div>
+            <div class="half-bottom-card"></div>
+          </div>
+          <div class="label">
+            <p>minutes</p>
+          </div>
+        </div>
+        <!-- Card Seconds -->
+        <div class="card-container">
+          <div class="second">
+            <div id="cardSec" class="card">
+              <h1 id="countSec">0</h1>
+              <div class="halfcircle"></div>
+              <div class="halfcircle right"></div>
+            </div>
+            <div class="half-bottom-card"></div>
+          </div>
+          <div class="label">
+            <p>seconds</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="images">
+        <img class="img-stars" src="./images/bg-stars.svg" alt="Starts images" />
+      </div>
+      <footer class="attribution">
+        <div class="soc-icon">
+          <a href="https://www.facebook.com" target="_blank"
+            ><img class="icons" src="./images/icon-facebook.svg" alt="Facebook icon"
+          /></a>
+          <a href="https://www.pinterest.com" target="_blank">
+            <img class="icons" src="./images/icon-pinterest.svg" alt="Pinterest icon"
+          /></a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="icons" src="./images/icon-instagram.svg" alt="Instagram icon"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <img class="img-hills" src="./images/pattern-hills.svg" alt="Hills images" />
+
+    <script src="js/index.js"></script>
+
+  </body>
+</html>

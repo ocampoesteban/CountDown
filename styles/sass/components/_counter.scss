@@ -1,0 +1,51 @@
+.countdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 50px;
+  
+    .day, .hour, .minute, .second {
+      position: relative;
+      margin: 10px;
+    }
+  
+    .day .halfcircle, .hour .halfcircle, .minute .halfcircle, .second .halfcircle {
+      position: absolute;
+      top: 45px;
+      width: 5px;
+      height: 10px;
+      border: 1px;
+      background-color: #1f2032;
+      border-radius: 0 20px 20px 0;
+    }
+  
+    .day .halfcircle.right, .hour .halfcircle.right, .minute .halfcircle.right, .second .halfcircle.right {
+      left: 95px;
+      transform: rotate(180deg);
+    }
+  
+    .day .card, .hour .card, .minute .card, .second .card {
+      width: 100px;
+      height: 50px;
+      -webkit-transform-origin: bottom;
+      transform-origin: bottom;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      border-radius: 5px 5px 0 0;
+      -webkit-box-shadow: 0 0 1px black;
+      box-shadow: 0 0 1px black;
+      background-color: #343650;
+    }
+  
+    .day .half-bottom-card, .hour .half-bottom-card, .minute .half-bottom-card, .second .half-bottom-card {
+      width: 100px;
+      height: 50px;
+      border-radius: 0 0 5px 5px;
+      -webkit-box-shadow: 0 10px 2px black;
+      box-shadow: 0 10px 2px black;
+      background-color: #444669;
+    }
+}

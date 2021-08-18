@@ -1,0 +1,8 @@
+// eg: @include font($color: 14px, $text-transform: italic, $margin: 400, $text-transform: normal, $family: $font-family-base);
+@mixin font($color: null, $text-align: null, $margin: null, $text-transform: null, $family: null) {
+    font-family: $family;
+    color: $color;
+    text-transform: $text-transform;
+    margin: $margin;
+    text-align: $text-align;
+}

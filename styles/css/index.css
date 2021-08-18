@@ -1,0 +1,135 @@
+body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1e1f29), to(#231e29));
+    background-image: linear-gradient(180deg, #1e1f29, #231e29);
+    background-attachment: fixed;
+  }
+  
+  .container {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: "Red Hat Text", san-serif;
+    margin: 50px;
+    margin-top: 150px;
+  }
+  
+  p {
+    color: #8486a9;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 25px;
+    font-family: "Red Hat Text", san-serif;
+  }
+  
+  h1 {
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+    color: #fb6087;
+    font-size: 50px;
+    font-family: "Red Hat Text", san-serif;
+  }
+  
+  .countdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 50px;
+  }
+  .countdown .day, .countdown .hour, .countdown .minute, .countdown .second {
+    position: relative;
+    margin: 10px;
+  }
+  .countdown .day .halfcircle, .countdown .hour .halfcircle, .countdown .minute .halfcircle, .countdown .second .halfcircle {
+    position: absolute;
+    top: 45px;
+    width: 5px;
+    height: 10px;
+    border: 1px;
+    background-color: #1f2032;
+    border-radius: 0 20px 20px 0;
+  }
+  .countdown .day .halfcircle.right, .countdown .hour .halfcircle.right, .countdown .minute .halfcircle.right, .countdown .second .halfcircle.right {
+    left: 95px;
+    transform: rotate(180deg);
+  }
+  .countdown .day .card, .countdown .hour .card, .countdown .minute .card, .countdown .second .card {
+    width: 100px;
+    height: 50px;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    border-radius: 5px 5px 0 0;
+    -webkit-box-shadow: 0 0 1px black;
+    box-shadow: 0 0 1px black;
+    background-color: #343650;
+  }
+  .countdown .day .half-bottom-card, .countdown .hour .half-bottom-card, .countdown .minute .half-bottom-card, .countdown .second .half-bottom-card {
+    width: 100px;
+    height: 50px;
+    border-radius: 0 0 5px 5px;
+    -webkit-box-shadow: 0 10px 2px black;
+    box-shadow: 0 10px 2px black;
+    background-color: #444669;
+  }
+  
+  .soc-icon a:not(:first-child) {
+    margin-left: 1rem;
+  }
+  
+  .soc-icon :hover {
+    cursor: pointer;
+  }
+  
+  .attribution {
+    font-size: 11px;
+    color: #8486a9;
+    text-align: center;
+  }
+  
+  .attribution a {
+    color: #3e52a3;
+  }
+  
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    margin: 10px auto;
+  }
+  
+  .img-stars {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  
+  .img-hills {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  @media (max-width: 500px) {
+    .text {
+      margin-top: 50px;
+    }
+  }

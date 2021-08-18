@@ -1,0 +1,19 @@
+{
+  "name": "countdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Esteban Sossa Ocampo",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-changed": "^4.0.3",
+    "gulp-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "sass": "^1.37.5"
+  }
+}
